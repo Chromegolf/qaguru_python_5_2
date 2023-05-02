@@ -1,7 +1,8 @@
 from selene.support.shared import browser
 from selene import be, have
 
-randomParam = 'qwerty123sdsdsdsskdkadsjdsndsjnj'
+randomParam = 'qwerty123sdsdsdsskdkadsj'
+
 
 def test_success_search(set_browser):
     browser.element('[name="q"]').should(be.blank).type('yashaka/selene').press_enter()
